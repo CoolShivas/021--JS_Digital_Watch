@@ -176,5 +176,15 @@
         </div>
       </div>
     </div>
+    <script>
+      const accClockID = document.getElementById("clock");
+      // console.log(accClockID);// Getting the p tag on console;
+
+      let currTiming = new Date().toLocaleTimeString();
+      //console.log(currTiming);// Getting the time on console => 2:37:20 am;
+
+      accClockID.textContent = currTiming;// Assigning the real time to the id clock  with text as numerical time;
+
+    </script>
   </body>
 </html>
