@@ -190,6 +190,16 @@
 
       currentTime(); // Calling the function;
       //=====////=====// Ending of defining the currentTime and calling it. //=====////=====//
+
+      //////*******************************************************************************************************//////
+
+       //=====////=====// Starting of defining the setInterval to repeatedly call currentTIme() in every one second. //=====////=====//
+
+      setInterval(() => {
+        return currentTime();
+      }, 1000);
+
+      //=====////=====// Ending of defining the setInterval to repeatedly call currentTIme() in every one second. //=====////=====//
     </script>
   </body>
 </html>
