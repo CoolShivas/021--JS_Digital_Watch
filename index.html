@@ -195,11 +195,24 @@
 
        //=====////=====// Starting of defining the setInterval to repeatedly call currentTIme() in every one second. //=====////=====//
 
-      setInterval(() => {
-        return currentTime();
-      }, 1000);
+      // setInterval(() => {
+      //   return currentTime();
+      // }, 1000);
 
       //=====////=====// Ending of defining the setInterval to repeatedly call currentTIme() in every one second. //=====////=====//
+
+      //////*******************************************************************************************************//////
+
+       //=====////=====// Starting of defining the setTimeout with clearInterval to stop the setInterval after timeout of five seconds. //=====////=====//
+
+       const interValID = setInterval(() => {currentTime()}, 1000);
+
+       setTimeout(() => {
+        return(clearInterval(interValID));
+       }, 5000);// Stopping the watch or seconds after 5 seconds;
+
+       //=====////=====// Ending of defining the setTimeout with clearInterval to stop the setInterval after timeout of five seconds. //=====////=====//
+
     </script>
   </body>
 </html>
