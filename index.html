@@ -180,11 +180,16 @@
       const accClockID = document.getElementById("clock");
       // console.log(accClockID);// Getting the p tag on console;
 
-      let currTiming = new Date().toLocaleTimeString();
-      //console.log(currTiming);// Getting the time on console => 2:37:20 am;
+      //=====////=====// Starting of defining the currentTime and calling it. //=====////=====//
+      const currentTime = () => {
+        let currTiming = new Date().toLocaleTimeString();
+        //console.log(currTiming);// Getting the time on console => 2:37:20 am;
 
-      accClockID.textContent = currTiming;// Assigning the real time to the id clock  with text as numerical time;
+        accClockID.textContent = currTiming; // Assigning the real time to the id clock  with text as numerical time;
+      };
 
+      currentTime(); // Calling the function;
+      //=====////=====// Ending of defining the currentTime and calling it. //=====////=====//
     </script>
   </body>
 </html>
